@@ -1,6 +1,7 @@
 {
   "name": "hng-two",
   "version": "0.1.0",
+  "homepage": "https://ogbeni54.github.io/hng-t",
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
@@ -15,7 +16,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://ogbeni54.github.io/hng-t",
+  
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",

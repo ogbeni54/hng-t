@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Movie Website using TMDb API in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a movie website built using React that allows users to browse and discover information about movies using the TMDb (The Movie Database) API. Users can search for movies, view movie details, and more.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for movies by title.
+- Browse a list of popular movies.
+- View movie details including title, release date, genres, and overview.
+- Responsive design for a seamless experience on various devices.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this project locally, follow these steps:
 
-### `npm run build`
+1. Clone the repository to your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```shell
+   git clone https://github.com/ogbeni54/hng-t
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## go into the project directory
 
-### `npm run eject`
+2. cd HNG-TWO
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Install the project
+3. npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Fix API
+4. REACT_APP_TMDB_API_KEY=your_api_key_here
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Start App
 
-## Learn More
+5. npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Dependencies
+React
+React Router
+Axios (for making API requests)
+Bootstrap (for styling)
+API
+This project uses the TMDb API to fetch movie data. You will need to obtain an API key from TMDb and configure it in the .env file as mentioned in the Installation section.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.

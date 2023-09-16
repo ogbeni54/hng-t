@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Rubik', sans-serif; */
+}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap");
+:root {
+  --color-white: #fff;
+  --color-border: #d1d5db;
+  --color-red: #be123c;
+  --color-black: #000;
+  --color-grey: #9ca3af;
+  --color-navy-blue: #111827;
+  --color-grey-footer: #6b7280;
+  --color-grey-logout: #666;
+  --color-light-red: #be123c33;
+}

@@ -1,0 +1,84 @@
+.contA{
+    color: var(--color-white);
+    width: 80%;
+    margin: 100px auto 0px;
+
+}
+.contAb{
+    width:50%;
+}
+.contAb h1{
+    font-size: 50px;
+}
+.contAb p{
+    font-size: 20px;
+    width: 75%;
+    
+}
+.details{
+    display: flex;
+    width: 80%;
+    gap: 2.5rem;
+    margin: 15px 0px;
+}
+.extA{
+    display: flex;
+    gap: 1rem;
+}
+.extB{
+    display: flex;
+    gap: 1rem;
+}
+.brot{
+    /* margin: 20px 0; */
+    padding: 20px 0px;
+}
+.btn1{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-red);
+    border: transparent;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+
+}
+.btn1 p{
+    font-size: 15px;
+    width: 100%;
+    color: var(--color-white);
+}
+.btn1 .imaga{
+    width: 20%;
+}
+.btn1 .imaga img{
+    width: 100%;
+}
+.movieA{
+    width: 80%;
+    margin: 10px auto;
+}
+.footer{
+    width: 25%;
+    margin: 40px auto 10px;
+}
+ .opt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px auto;
+}
+.socio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 10px auto;
+}
+.copy{
+    text-align: center;
+}

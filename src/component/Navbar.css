@@ -1,0 +1,67 @@
+.main{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 10px;
+    Color:var(--color-white);
+
+}
+
+.main .logo_t{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+    /* width: 25%; */
+}
+
+/* .logy img{
+    width: 100%;
+}
+.logy{
+    width: 40%;
+    margin: 0;
+    padding: 0;
+} */
+.main .sign{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1rem;
+    /* width: 20%; */
+}
+.title{
+    Color:var(--color-white);
+}
+.search{
+    width: 30%;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+.form input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    Color:var(--color-white);
+}
+.form input::placeholder{
+    Color:var(--color-white);
+    
+}
+.form button{
+    outline: none;
+    background: transparent;
+    border: none;
+    Color:var(--color-white);
+}

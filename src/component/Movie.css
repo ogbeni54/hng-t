@@ -1,0 +1,107 @@
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.heady{
+    color: black;
+    background-color: transparent;
+    font-weight: 700;
+    /* margin: 20px 0px; */
+}
+.headier{
+    color: var(--color-red);
+    text-align: right;
+    font-weight: 700;
+    /* margin: 20px 0px; */
+}
+
+.container{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+   /* display: grid;
+   grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
+   gap: 3.5rem; */
+}
+.movie-card{
+    
+    flex: 20% 1;
+    position: relative;
+    
+}
+.movie-card .hat{
+    position: absolute;
+    background-color: #bbb;
+    border: solid transparent;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.movie-card .haty{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #fff;
+    color: red;
+    font-size: 18px;
+    padding: 5px;
+    border: solid transparent;
+    border-radius: 50%;
+  }
+.movie-card img{
+    width: 100%;
+    /* height: 35vh; */
+}
+.post{
+    width: 100%;
+}
+.movie-card h2{
+    color: black;
+}
+h4{
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+}
+.rat-cont{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center;
+    width: 100%; */
+}
+.rat-cont .A{
+    display: flex;
+    /* width: 30%; */
+    gap: 0.5rem;
+    align-items: center
+}
+.rat-cont .B{
+    display: flex;
+    /* width: 30%; */
+    gap: 0.5rem;
+    align-items: center
+}
+.a1 img{
+    width: 100%;
+}
+.a1{
+    width: 30%;
+}
+.a2 img{
+    width: 100%;
+}
+.a2{
+    width: 30%;
+}
+.country{
+    margin: 10px 0 0 0;
+    color: var(--color-grey);
+}

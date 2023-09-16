@@ -12,15 +12,15 @@ function App() {
   
   return (
     <div className="App">
-      {/* <Router>
+      <Router>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='' element={<Trail/>}/>
+          <Route path='/movies/:id' element={<Trail/>}/>
 
         </Routes>
         </Router>
-       */}
-       <Home/>
+      
+       {/* <Home/> */}
     </div>
   );
 }

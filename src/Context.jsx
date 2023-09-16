@@ -34,14 +34,14 @@ export const MyProvider = ({ children }) => {
             }
         })
   
-        console.log(data.results[0])
-        console.log(data.result);
+        // console.log(data.results[0])
+        // console.log(data.result);
         setMovies(data.results.slice(0,10))
         setMovie(data.results[0])
   
-        if (data.results.length) {
-            await fetchMovie(data.results[0].id)
-        }
+        // if (data.results.length) {
+        //     await fetchMovie(data.results[0].id)
+        // }
         // setSearchKey('')
         
     }
@@ -50,7 +50,7 @@ export const MyProvider = ({ children }) => {
         const {data} = await axios.get(`${MOVIE_API}movie/${id}`, {
             params: {
                 api_key: API_KEY,
-                append_to_response: "videos"
+                // append_to_response: "videos"
             }
         })
   
@@ -60,6 +60,7 @@ export const MyProvider = ({ children }) => {
         }
   
         setMovie(data)
+        console.log(data);
     }
   
   

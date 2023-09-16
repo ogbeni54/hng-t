@@ -1,13 +1,23 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { MyContext } from '../Context';
+import Trail from '../page/trail/Trail';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import './Movie.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Movie = () => {
-    const { state, fetchMovies, handleClick } = useContext(MyContext);
-    const { movies, favri, movie } = state;
+    const { state, fetchMovies, selectMovie, fetchMovie  } = useContext(MyContext);
+    const { movies} = state;
     const [click, setCick] = useState(false);
+    const [selectedMovieId, setSelectedMovieId] = useState(null);
+     const navigate = useNavigate()
+
+  const handleClick = (movie) => {
+    selectMovie(movie);
+    setSelectedMovieId(movie.id);
+    navigate(`/movies/${movie.id}`); // Navigate to the movie details page
+  };
 
     
 //    console.log(movies);
@@ -24,7 +34,7 @@ const Movie = () => {
 //   };
 
 
-  console.log(movie);
+//   console.log( await fetchMovie(movie.id));
     return (
         <div>
             <div className="mainat">
@@ -51,7 +61,7 @@ const Movie = () => {
                     <div className="container">
                         {movies.map((movie, index) => (
                             // Render movie details here
-                            <div key={movie.id} className="movie-card" data-testid='movie-card'>
+                           <Link to={`/movies/${movie.id}`} > <div key={movie.id} className="movie-card" data-testid='movie-card'>
                                 
                                 {/* <Hearty index={movie.id} /> */}
                                 
@@ -84,11 +94,12 @@ const Movie = () => {
 
                                 
 
-                            </div>
+                            </div></Link>
                         ))}
                     </div>
                 )}
             </div>
+            {/* <Trail selectedMovieId={selectedMovieId} /> */}
         </div>
     );
 };

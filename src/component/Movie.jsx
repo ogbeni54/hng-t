@@ -1,23 +1,15 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext} from 'react';
 import { MyContext } from '../Context';
-import Trail from '../page/trail/Trail';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import './Movie.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Movie = () => {
-    const { state, fetchMovies, selectMovie, fetchMovie  } = useContext(MyContext);
+    const { state} = useContext(MyContext);
     const { movies} = state;
-    const [click, setCick] = useState(false);
-    const [selectedMovieId, setSelectedMovieId] = useState(null);
-     const navigate = useNavigate()
+   
+    
 
-  const handleClick = (movie) => {
-    selectMovie(movie);
-    setSelectedMovieId(movie.id);
-    navigate(`/movies/${movie.id}`); // Navigate to the movie details page
-  };
+  
 
     
 //    console.log(movies);

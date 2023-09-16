@@ -4,7 +4,7 @@ import { MyContext } from '../../Context';
 import './Trail.css';
 const Trail = () => {
     const { state, fetchMovie} = useContext(MyContext);
-    const { movie, trailer } = state;
+    const { movie} = state;
     const [loading, setLoading] = useState(true);
 
     const {id} = useParams()
@@ -23,7 +23,7 @@ const Trail = () => {
           });
       }, [id]);
 
-      console.log(trailer);
+   
 
   return (
     <div>
@@ -81,7 +81,7 @@ const Trail = () => {
                         <span data-testid='movie-release-date'>{new Date(movie.release_date).toUTCString()}</span>.&nbsp;
                         <span>
                           PG-
-                          {movie.genres.length > 0 && (
+                          {movie.genres.length >= 0 && (
                             <span>{movie.genres[0].id}</span>
                           )}
                         </span>

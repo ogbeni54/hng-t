@@ -8,7 +8,7 @@ export const MyProvider = ({ children }) => {
     const SEARCH_API = MOVIE_API + "search/movie"
     const DISCOVER_API = MOVIE_API + "movie/top_rated"
     const API_KEY = "c4d5df8083103f3545114862c2333b93"
-    const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280"
+   
   
     const [playing, setPlaying] = useState(false)
     const [trailer, setTrailer] = useState(null)

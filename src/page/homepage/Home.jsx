@@ -3,7 +3,7 @@ import {useContext} from "react"
 import { MyContext } from '../../Context'
 import './home.css'
 
-import axios from 'axios'
+
 
 import Navbar from '../../component/Navbar'
 import Movie from '../../component/Movie'
@@ -40,7 +40,7 @@ const Home = () => {
                 </h1>
                 <div className="details">
                     <div className="extA">
-                        <img src="./Assets/imdb.svg" alt="imdb image" />
+                        <img src="./Assets/imdb.svg" alt="imdb" />
                         <p>86.0/100</p>
                     </div>
                     <div className="extB">

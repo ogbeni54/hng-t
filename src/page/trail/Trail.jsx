@@ -77,15 +77,15 @@ const Trail = () => {
                       <h2>
                         {" "}
                         <span data-testid='movie-title'>{movie.title}</span>
-                        <br />.<br />
-                        <span data-testid='movie-release-date'>{new Date(movie.release_date).toUTCString()}</span>.<br />
+                        &nbsp;.&nbsp;
+                        <span data-testid='movie-release-date'>{new Date(movie.release_date).toUTCString()}</span>.&nbsp;
                         <span>
                           PG-
                           {movie.genres.length > 0 && (
                             <span>{movie.genres[0].id}</span>
                           )}
                         </span>
-                        .<br />
+                        .&nbsp;
                         <span data-testid='movie-runtime'>{movie.runtime}</span>{" "}
                       </h2>
                       <p className="action">{}</p>
